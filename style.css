@@ -1,0 +1,73 @@
+:root{
+  --ink:#191919; --paper:#fbfaf7; --panel:#ffffff; --line:#d8d2c4;
+  --accent:#8c2b1d; --accent2:#1f3a5f; --muted:#4c4c46;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:Georgia,'Times New Roman',serif;font-size:1.06rem;line-height:1.65}
+a{color:var(--accent2);text-decoration:underline;text-underline-offset:2px}
+a:hover{color:var(--accent)}
+.skip{position:absolute;left:-9999px;top:0;background:var(--ink);color:#fff;
+  padding:.5rem 1rem;z-index:20}
+.skip:focus{left:0}
+header.site{background:var(--ink);color:#fff;padding:1rem 1rem .6rem}
+header.site .wrap, .wrap{max-width:62rem;margin:0 auto;padding:0 1rem}
+.brand{font-family:'Arial Narrow',Arial,sans-serif;letter-spacing:.18em;
+  text-transform:uppercase;font-size:.85rem;color:#e8e2d2}
+.brand strong{display:block;font-family:Impact,'Arial Black',sans-serif;
+  font-size:2rem;letter-spacing:.06em;color:#fff;line-height:1.1;margin:.15rem 0}
+nav.main{background:var(--ink);padding:.4rem 0 .9rem}
+nav.main ul{list-style:none;display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;
+  margin:0;padding:0}
+nav.main a{color:#fff;text-decoration:none;font-family:Arial,sans-serif;
+  font-size:.95rem;border-bottom:2px solid transparent;padding-bottom:.15rem}
+nav.main a:hover, nav.main a[aria-current="page"]{border-bottom-color:#e3bb37;color:#fff}
+main{padding:1.6rem 0 2.5rem}
+h1{font-family:Impact,'Arial Black',sans-serif;font-weight:400;
+  letter-spacing:.03em;font-size:2.3rem;line-height:1.15;margin:.2rem 0 .8rem;
+  text-transform:uppercase}
+h2{font-family:Impact,'Arial Black',sans-serif;font-weight:400;
+  letter-spacing:.04em;font-size:1.5rem;margin:2rem 0 .6rem;text-transform:uppercase;
+  border-bottom:3px solid var(--ink);padding-bottom:.25rem}
+h3{font-size:1.15rem;margin:1.4rem 0 .35rem}
+p{margin:.55rem 0}
+.lede{font-size:1.22rem;line-height:1.55}
+.tagline{font-family:'Arial Narrow',Arial,sans-serif;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--accent);font-size:1rem;margin:.2rem 0 1rem}
+.card{background:var(--panel);border:1px solid var(--line);
+  border-left:6px solid var(--accent2);padding:1rem 1.2rem;margin:1rem 0}
+.card.example{border-left-color:var(--accent)}
+.draft-note{background:#fdf6d8;border:2px dashed var(--accent);
+  padding:1rem 1.2rem;margin:1.2rem 0}
+.draft-note .kicker{font-family:Arial,sans-serif;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:var(--accent)}
+.chip{display:inline-block;font-family:Arial,sans-serif;font-size:.78rem;
+  font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  border:2px solid var(--ink);padding:.08rem .5rem;margin-right:.5rem;
+  background:#fff}
+.chip.passed{background:#1e5631;color:#fff;border-color:#1e5631}
+.chip.pending{background:#e3bb37;color:#191919;border-color:#191919}
+.chip.tabled{background:#666;color:#fff;border-color:#666}
+.chip.draft{background:#fff;color:#666;border-color:#999}
+table.ledger{width:100%;border-collapse:collapse;margin:1rem 0;font-size:1rem}
+table.ledger th, table.ledger td{border:1px solid var(--line);
+  padding:.55rem .7rem;text-align:left;vertical-align:top;background:var(--panel)}
+table.ledger th{background:var(--ink);color:#fff;font-family:Arial,sans-serif;
+  font-size:.85rem;letter-spacing:.06em;text-transform:uppercase}
+blockquote{border-left:4px solid var(--accent);margin:1rem 0;padding:.2rem 0 .2rem 1rem;
+  font-style:italic}
+ul.tight li{margin:.3rem 0}
+footer.site{background:var(--ink);color:#e8e2d2;padding:1.6rem 0 2rem;
+  font-size:.95rem}
+footer.site a{color:#f0c94a}
+.small{font-size:.9rem;color:var(--muted)}
+footer.site .small{color:#bdb7a6}
+.pillars{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
+.pillars span{border:2px solid var(--ink);background:#fff;padding:.35rem .8rem;
+  font-family:'Arial Narrow',Arial,sans-serif;letter-spacing:.14em;
+  text-transform:uppercase;font-size:.9rem}
+@media (max-width:640px){
+  h1{font-size:1.7rem} h2{font-size:1.25rem}
+  header.site .brand strong{font-size:1.5rem}
+}
