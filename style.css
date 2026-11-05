@@ -63,6 +63,13 @@ footer.site{background:var(--ink);color:#e8e2d2;padding:1.6rem 0 2rem;
 footer.site a{color:#f0c94a}
 .small{font-size:.9rem;color:var(--muted)}
 footer.site .small{color:#bdb7a6}
+figure.photo{margin:1.4rem 0}
+figure.photo img{max-width:100%;height:auto;display:block;
+  border:1px solid var(--line);background:var(--panel)}
+figure.photo figcaption{font-size:.88rem;color:var(--muted);
+  margin-top:.4rem;font-family:Arial,sans-serif}
+figure.photo.narrow{max-width:21rem}
+figure.photo.narrow img{border:none;background:transparent}
 .pillars{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0}
 .pillars span{border:2px solid var(--ink);background:#fff;padding:.35rem .8rem;
   font-family:'Arial Narrow',Arial,sans-serif;letter-spacing:.14em;
